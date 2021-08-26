@@ -18,7 +18,8 @@ body {
     position: relative;
     background-color: hsl(230, 17%, 14%);
 }
-.fondo{
+
+.fondo {
     position: absolute;
     background-color: hsl(232, 19%, 15%);
     width: 100%;
@@ -37,12 +38,14 @@ body {
     align-items: center;
     margin: 50px 0;
 }
-.title{
+
+.title {
     font-size: 2.5em;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
     margin-bottom: 10px;
 }
+
 .subtitle {
     color: hsl(228, 12%, 44%);
     font-weight: 700;
@@ -50,7 +53,7 @@ body {
 }
 
 /*Switch*/
-.confiswiche{
+.confiswiche {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,9 +105,11 @@ body {
 .toggle:checked+.deslizar {
     background: hsl(230, 22%, 74%);
 }
+
 .toggle:checked+.deslizar:hover {
     background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
+
 .toggle:checked {
     background: hsl(230, 22%, 74%);
 }
@@ -145,6 +150,11 @@ body {
     flex-direction: column;
 }
 
+.socialcard:hover {
+    cursor: pointer;
+    background: hsl(229, 27%, 27%);
+}
+
 .socialcard__user {
     display: flex;
     justify-content: center;
@@ -179,9 +189,7 @@ body {
     align-items: center;
 }
 
-.red {
-    color: hsl(356, 69%, 56%);
-}
+
 
 .icon-up,
 .icon-down {
@@ -211,12 +219,13 @@ body {
 
 /*Overviewcard*/
 
-.overiew__title{
-    margin: 50px  0 25px;
+.overiew__title {
+    margin: 50px 0 25px;
     font-size: 2em;
     font-weight: 700;
     color: hsl(228, 12%, 44%);
 }
+
 .overiew {
     display: grid;
     gap: 2em;
@@ -235,21 +244,30 @@ body {
     width: auto;
     padding: 20px 30px;
 }
-.stadistic__name, .stadistic__number{
+
+.overiewcards:hover {
+    cursor: pointer;
+    background: hsl(229, 27%, 27%);
+}
+
+.stadistic__name,
+.stadistic__number {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.overiewcards__item{
+.overiewcards__item {
     font-size: 1em;
     font-weight: 700;
     color: hsl(228, 12%, 44%);
 }
-.item__number{
+
+.item__number {
     font-size: 2em;
 }
-.overiewcards__porcent{
+
+.overiewcards__porcent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,21 +287,44 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
+.red {
+    color: hsl(356, 69%, 56%);
+}
+
+/*Hover diferente color*/
+
+.hoverdark {
+    background: hsl(228, 28%, 20%);
+}
+
+.hoverdark:hover {
+    background: hsl(229, 27%, 27%);
+}
+
+.light {
+    background: hsl(227, 47%, 96%);
+}
+
+.light:hover {
+    background: hsl(222, 25%, 92%);
+}
 
 /*Quierys*/
 
-@media (max-width:750px){
+@media (max-width:750px) {
     .banner {
         display: block;
     }
-    .confiswiche{
+
+    .confiswiche {
         margin-top: 30px;
         border-top: solid 1px hsla(229, 12%, 44%, 0.555);
         justify-content: space-between;
     }
 }
-@media (max-width:750px){
-    .title{
+
+@media (max-width:750px) {
+    .title {
         font-size: 1.9em;
     }
 }

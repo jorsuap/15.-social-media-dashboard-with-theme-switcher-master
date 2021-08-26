@@ -16,31 +16,38 @@ checkbox.addEventListener('change', function () {
         baner.style.background = "hsl(225, 100%, 98%)";
         
         cardsocial.forEach(elemento =>{
-            elemento.style.background = "hsl(227, 47%, 96%)";
+            // elemento.style.background = "hsl(227, 47%, 96%)";
+            elemento.classList.add("light");
+            elemento.classList.remove("hoverdark");
         });
         followers.forEach(followers =>{
             followers.style.color = "hsl(230, 17%, 14%)";
         });
         cardoverview.forEach(overview =>{
-            overview.style.background = "hsl(227, 47%, 96%)";
+            // overview.style.background = "hsl(227, 47%, 96%)";
+            overview.classList.add("light");
+            overview.classList.remove("hoverdark");
         });
         itemnumber.forEach(item =>{
             item.style.color = "hsl(230, 17%, 14%)";
         });
-        
     }
     else{
         title.style.color = "hsl(0, 0%, 100%)";
         body.style.background = "hsl(230, 17%, 14%)";
         baner.style.background = "hsl(232, 19%, 15%)";
         cardsocial.forEach(elemento =>{
-            elemento.style.background = "hsl(228, 28%, 20%)";
+            // elemento.style.background = "hsl(228, 28%, 20%)";
+            elemento.classList.add("hoverdark");
+            elemento.classList.remove("light");
         });
         followers.forEach(followers =>{
             followers.style.color = "hsl(0, 0%, 100%)";
         });
         cardoverview.forEach(overview =>{
-            overview.style.background = "hsl(228, 28%, 20%)";
+            // overview.style.background = "hsl(228, 28%, 20%)";
+            overview.classList.add("hoverdark");
+            overview.classList.remove("light");
         });
         itemnumber.forEach(item =>{
             item.style.color = "hsl(0, 0%, 100%)";
