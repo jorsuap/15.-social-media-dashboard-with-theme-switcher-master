@@ -8,7 +8,7 @@ var checkbox = document.getElementsByClassName("toggle")[0];
 let followers = document.querySelectorAll(".socialcard__followers");
 let itemnumber = document.querySelectorAll(".item__number");
 
-checkbox.addEventListener('change', function () {//Validacion de el checkbox
+checkbox.addEventListener('change', function() {//Validacion de el checkbox
     if(this.checked){
      
         body.style.background = "hsl(0, 0%, 100%)";
